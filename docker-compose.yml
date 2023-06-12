@@ -5,11 +5,3 @@ services:
     ports:
       - "6379:6379"
 
-  #first-project:
-  #  build:
-  #    context: .
-  #    dockerfile: src/main/docker/Dockerfile.jvm
-  #  image: quarkus/first-project-jvm
-  #  ports:
-  #    - 8080:8080
-
