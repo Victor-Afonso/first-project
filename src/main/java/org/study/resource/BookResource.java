@@ -76,7 +76,7 @@ public class BookResource {
 
         Book book = service.removeBook(name);
         if (book != null) {
-            log.info("Book deleted: " + book);
+            log.info("Book deleted: " + name);
             registry.counter("books.name.delete", "type", "success").increment();
 
             return Response.ok(book).build();
